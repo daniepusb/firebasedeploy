@@ -6,4 +6,5 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 ENTRYPOINT ["python"]
+ENV PORT 8080
 CMD ["app.py"]
